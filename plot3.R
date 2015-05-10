@@ -1,8 +1,7 @@
-# First download the zip and extract "household_power_consumption.txt"
-# file to the working directory
+# First download the zip and extract "household_power_consumption.txt" file to the working directory
 
-## Bring datafrom file to hcp data.frame
-library(sqldf) #needed in order to use read.csv.sql
+## Bring data from file to hcp data.frame
+library(sqldf) # the sqldf library is needed in order to use read.csv.sql
   
   fileName = "household_power_consumption.txt"
   sql = "select * from file where Date in ('1/2/2007','2/2/2007')"
